@@ -31,8 +31,8 @@ app.get("/", (req, res) => {
             payment_method: "paypal"
         },
         redirect_urls: {
-            return_url: "http://localhost:3000/success",
-            cancel_url: "http://localhost:3000/cancel"
+            return_url: "https://better-u-c3095.web.app/success",
+            cancel_url: "https://better-u-c3095.web.app/cancel"
         },
         transactions: [
             {
