@@ -32,8 +32,8 @@ app.get("/", (req, res) => {
             payment_method: "paypal"
         },
         redirect_urls: {
-            return_url: "https://better-u-c3095.web.app/success",
-            cancel_url: "https://better-u-c3095.web.app/cancel"
+            return_url: "https://betteru-app-paypal.herokuapp.com/success",
+            cancel_url: "https://betteru-app-paypal.herokuapp.com/cancel"
         },
         transactions: [
             {
