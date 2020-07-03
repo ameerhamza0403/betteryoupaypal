@@ -4,6 +4,7 @@ const engines = require("consolidate");
 const paypal = require("paypal-rest-sdk");
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.engine("ejs", engines.ejs);
 app.set("views", "./views");
@@ -102,6 +103,6 @@ app.get("cancel", (req, res) => {
     res.render("cancel");
 });
 
-app.listen(3000, () => {
-    console.log("Server is running");
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
 });
